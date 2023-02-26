@@ -1,0 +1,11 @@
+FROM node:14.17.5
+
+SHELL ["/bin/bash", "-c"]
+
+WORKDIR /app
+
+COPY . .
+
+RUN npm install
+
+ENTRYPOINT node .
